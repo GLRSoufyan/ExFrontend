@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bekijk de portfolio van Jimmy Dvate. Een interactieve galerij met grootschalige muurschilderingen van Australische vogels, dieren en planten.">
+	<meta name="keywords" content="Portfolio, muurschilderingen galerij, street art, natuur schilderijen, Jimmy Dvate kunst">
+
+	<meta property="og:title" content="Galerij | Bekijk het werk van Jimmy Dvate">
+	<meta property="og:description" content="Ontdek een unieke collectie van muurschilderingen die de schoonheid van de natuur benadrukken.">
+	<meta property="og:image" content="https://jouwdomeinnaam.nl/images/foto1.jpg">
+	<link rel="stylesheet" href="style.css">
 	<title>Galerij</title>
 </head>
 <body>
-<div width=100%>
-	<a href="index.html">OVER MIJ</a> -
-	<a href="contact.html">CONTACT</a>
-</div>
-<h2>Galerij</h2>
-<img src="images/foto1.jpg"/><br/>
-Silo beschildering in Rochester<br/>
-<img src="images/foto2.jpg"/><br/>
-Silo met vogelbekdier<br/>
-<img src="images/foto3.jpg"/><br/>
-Landschap met witte reiger<br/>
-<img src="images/foto4.jpg"/><br/>
-Waikerie bij de Murray River<br/>
+	<div class="header" style="width:100%">
+		<a href="index.html">OVER MIJ</a> - 
+		<a href="contact.html">CONTACT</a>
+	</div>
+
+	<div class="gallery">
+		<ul class="cards">
+			<li style="background-image: url(./images/foto1.jpg)" alt="Silo beschildering in Rochester door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto2.jpg)" alt="Silo met vogelbekdier door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto3.jpg)" alt="Landschap met witte reiger door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto4.jpg)" alt="Waikerie bij de Murray River door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto1.jpg)" alt="Silo beschildering in Rochester door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto2.jpg)" alt="Silo met vogelbekdie door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto3.jpg)" alt="Landschap met witte reiger door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto4.jpg)" alt="Waikerie bij de Murray River door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto1.jpg)" alt="Silo beschildering in Rochester door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto2.jpg)" alt="Silo met vogelbekdier door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto3.jpg)" alt="Landschap met witte reiger door Jimmy Dvate"></li>
+			<li style="background-image: url(./images/foto4.jpg)" alt="Waikerie bij de Murray River door Jimmy Dvate"></li>
+		</ul>
+
+		<div class="actions">
+		<button class="prev">Prev</button>
+		<button class="next">Next</button>
+		</div>
+	</div>
+	<div class="drag-proxy"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+<!-- ScrollSmoother requires ScrollTrigger -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+	<script src="./code.js"></script>
 </body>
 </html>
